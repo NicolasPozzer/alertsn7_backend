@@ -16,15 +16,17 @@ public class Ticket {
     private Long id;
     private String nombre;
     private Double precioEstablecido;
-    private Boolean direccion;  //  False = Short | True = Long
+    private String direccion;  //  False = Short | True = Long
+    private Boolean encendido;  //  False = Apagado | True = Encendido
 
     public Ticket() {
     }
 
-    public Ticket(Long id, String nombre, Double precioEstablecido, Boolean direccion) {
+    public Ticket(Long id, String nombre, Double precioEstablecido, String direccion, Boolean encendido) {
         this.id = id;
         this.nombre = nombre;
         this.precioEstablecido = precioEstablecido;
         this.direccion = direccion;
+        this.encendido = encendido;
     }
 }
