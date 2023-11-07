@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://alertsn7-front7.web.app")
+//@CrossOrigin(origins = "http://192.168.1.77:4200")
 @RequestMapping("/tickets")
 public class TicketController {
 
