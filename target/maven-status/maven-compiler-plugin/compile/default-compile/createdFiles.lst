@@ -1,0 +1,6 @@
+com\demo\alertsn7_backend\controller\TicketController.class
+com\demo\alertsn7_backend\service\ITicketService.class
+com\demo\alertsn7_backend\model\Ticket.class
+com\demo\alertsn7_backend\Alertsn7BackendApplication.class
+com\demo\alertsn7_backend\service\TicketService.class
+com\demo\alertsn7_backend\repository\IRepositoryTicket.class
