@@ -1,6 +1,14 @@
-Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\repository\IRepositoryTicket.java
 Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\service\TicketService.java
-Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\model\Ticket.java
 Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\Alertsn7BackendApplication.java
-Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\controller\TicketController.java
+Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\service\IApiCoinService.java
 Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\service\ITicketService.java
+Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\model\ApiCoin.java
+Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\service\ApiCoinService.java
+Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\Configuration\RestConfig.java
+Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\repository\IRepositoryTicket.java
+Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\service\BotService.java
+Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\model\Ticket.java
+Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\service\IBotService.java
+Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\controller\TicketController.java
+Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\service\IAlertaService.java
+Z:\YoProgramo\Mis Proyectos\alertsn7_backend\src\main\java\com\demo\alertsn7_backend\service\AlertaService.java
