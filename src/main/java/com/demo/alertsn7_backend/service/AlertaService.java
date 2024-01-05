@@ -21,7 +21,7 @@ public class AlertaService implements IAlertaService{
     private BotService botServ;
 
 
-        @Scheduled(fixedRate = 62000) // Ejecutar cada 10 segundos
+        @Scheduled(fixedRate = 240100) // Ejecutar cada 4 minutos
         @Override
         public void emitirAlerta() {
 
