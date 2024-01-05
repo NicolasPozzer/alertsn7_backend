@@ -33,10 +33,10 @@ public class AlertaService implements IAlertaService{
             for (Ticket ticket : listaTickets) {
                 for (ApiCoin coin : listaApi) {
 
-                    if (ticket.getNombre().equals(coin.getBaseAsset())) {
+                    if (ticket.getNombre().equals(coin.getSymbol())) {
                         /*Saber si es mayor*/
                         if (ticket.getEncendido() && "Encima".equals(ticket.getDireccion())
-                                && coin.getLastPrice() > ticket.getPrecioEstablecido()) {
+                                && coin.getCurrent_price() > ticket.getPrecioEstablecido()) {
 
                             /*Enviar mensaje*/
                             String chatId = "1603260238";
@@ -52,7 +52,7 @@ public class AlertaService implements IAlertaService{
 
                         /*Saber si es menor*/
                         else if (ticket.getEncendido() && "Debajo".equals(ticket.getDireccion())
-                                && coin.getLastPrice() < ticket.getPrecioEstablecido()) {
+                                && coin.getCurrent_price() < ticket.getPrecioEstablecido()) {
 
                             /*Enviar mensaje*/
                             String chatId = "1603260238";
