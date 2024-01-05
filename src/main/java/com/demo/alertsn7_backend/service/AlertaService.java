@@ -52,7 +52,7 @@ public class AlertaService implements IAlertaService{
 
                         /*Saber si es menor*/
                         else if (ticket.getEncendido() && "Debajo".equals(ticket.getDireccion())
-                                && coin.getLastPrice() > ticket.getPrecioEstablecido()) {
+                                && coin.getLastPrice() < ticket.getPrecioEstablecido()) {
 
                             /*Enviar mensaje*/
                             String chatId = "1603260238";
