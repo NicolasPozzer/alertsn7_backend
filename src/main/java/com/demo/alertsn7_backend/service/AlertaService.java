@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 
 @Service
 public class AlertaService implements IAlertaService{
@@ -21,17 +23,20 @@ public class AlertaService implements IAlertaService{
     private BotService botServ;
 
 
-        @Scheduled(fixedRate = 42000) // Ejecutar cada 42 segundos
+        @Scheduled(fixedRate = 62000) // Ejecutar cada 42 segundos
         @Override
         public void emitirAlerta() {
+            /*LLamar una sola vez a la lista de la api*/
+            List<ApiCoin> listaApi = apiServ.listadoApiCoin();
+            List<Ticket> listaTickets = ticketServ.getTickets();
 
-            for (Ticket ticket : ticketServ.getTickets()) {
-                for (ApiCoin coin : apiServ.listadoApiCoin()) {
+            for (Ticket ticket : listaTickets) {
+                for (ApiCoin coin : listaApi) {
 
-                    if (ticket.getNombre().equals(coin.getSymbol())) {
+                    if (ticket.getNombre().equals(coin.getBaseAsset())) {
                         /*Saber si es mayor*/
                         if (ticket.getEncendido() && "Encima".equals(ticket.getDireccion())
-                                && coin.getCurrent_price() > ticket.getPrecioEstablecido()) {
+                                && coin.getLastPrice() > ticket.getPrecioEstablecido()) {
 
                             /*Enviar mensaje*/
                             String chatId = "1603260238";
@@ -47,7 +52,7 @@ public class AlertaService implements IAlertaService{
 
                         /*Saber si es menor*/
                         else if (ticket.getEncendido() && "Debajo".equals(ticket.getDireccion())
-                                && coin.getCurrent_price() > ticket.getPrecioEstablecido()) {
+                                && coin.getLastPrice() > ticket.getPrecioEstablecido()) {
 
                             /*Enviar mensaje*/
                             String chatId = "1603260238";

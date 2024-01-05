@@ -8,15 +8,15 @@ import lombok.ToString;
 public class ApiCoin {
 
     private Long id_apicoin;
-    private String symbol;
-    private Double current_price;
+    private String baseAsset;
+    private Double lastPrice;
 
     public ApiCoin() {
     }
 
-    public ApiCoin(Long id_apicoin, String symbol, Double current_price) {
+    public ApiCoin(Long id_apicoin, String baseAsset, Double lastPrice) {
         this.id_apicoin = id_apicoin;
-        this.symbol = symbol;
-        this.current_price = current_price;
+        this.baseAsset = baseAsset;
+        this.lastPrice = lastPrice;
     }
 }
