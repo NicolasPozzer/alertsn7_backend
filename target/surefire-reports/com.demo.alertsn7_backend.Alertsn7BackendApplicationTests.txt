@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.demo.alertsn7_backend.Alertsn7BackendApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.409 s - in com.demo.alertsn7_backend.Alertsn7BackendApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.887 s - in com.demo.alertsn7_backend.Alertsn7BackendApplicationTests

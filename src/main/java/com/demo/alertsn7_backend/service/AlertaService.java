@@ -21,7 +21,7 @@ public class AlertaService implements IAlertaService{
     private BotService botServ;
 
 
-        @Scheduled(fixedRate = 240100) // Ejecutar cada 4 minutos
+        @Scheduled(fixedRate = 42000) // Ejecutar cada 42 segundos
         @Override
         public void emitirAlerta() {
 
@@ -36,7 +36,7 @@ public class AlertaService implements IAlertaService{
                             /*Enviar mensaje*/
                             String chatId = "1603260238";
                             String message = "🔔 Alerta para |"+ticket.getNombre()+
-                                    "| Se ha superado el precio de "+ticket.getPrecioEstablecido();
+                                    "| ¡El Precio Supero los: ⬆ $"+ticket.getPrecioEstablecido();
                             botServ.sendMessage(chatId, message);
 
                             /*Cambiar el estado a -> Apagado*/
@@ -52,7 +52,7 @@ public class AlertaService implements IAlertaService{
                             /*Enviar mensaje*/
                             String chatId = "1603260238";
                             String message = "🔔 Alerta para |"+ticket.getNombre()+
-                                    "| Cayo el precio de "+ticket.getPrecioEstablecido();
+                                    "| ¡Precio cayó ⬇ por debajo de $"+ticket.getPrecioEstablecido();
                             botServ.sendMessage(chatId, message);
 
                             /*Cambiar el estado a -> Apagado*/
