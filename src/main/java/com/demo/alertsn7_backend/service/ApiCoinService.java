@@ -13,7 +13,7 @@ import java.util.List;
 @Service
 public class ApiCoinService implements IApiCoinService{
 
-    private static final String API_URL = "https://api.wazirx.com/sapi/v1/tickers/24hr";
+    private static final String API_URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd";
 
     @Override
     public List<ApiCoin> listadoApiCoin() {
