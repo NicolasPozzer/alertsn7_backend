@@ -26,6 +26,7 @@ public class AlertaService implements IAlertaService{
         @Scheduled(fixedRate = 62000) // Ejecutar cada 42 segundos
         @Override
         public void emitirAlerta() {
+
             /*LLamar una sola vez a la lista de la api*/
             List<ApiCoin> listaApi = apiServ.listadoApiCoin();
             List<Ticket> listaTickets = ticketServ.getTickets();
