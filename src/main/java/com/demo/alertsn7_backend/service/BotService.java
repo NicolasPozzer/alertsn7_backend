@@ -13,7 +13,7 @@ public class BotService implements IBotService {
 
     private static final String TELEGRAM_API_URL = "https://api.telegram.org/bot";
 
-    @Value("${telegram.bot.token}") // Inyecta el token desde las propiedades
+    @Value("${telegram.bot.token}") // Inyecta el token desde el application.properties
     private String botToken;
 
     private final RestTemplate restTemplate;
